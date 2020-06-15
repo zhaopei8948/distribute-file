@@ -1,0 +1,10 @@
+server:
+  port: 8888
+
+distributefile:
+  # dir|fileFilter|periodic(ms)|maxMessagesPerPoll|minConcurrency|maxConcurrency|keepAliveSeconds|queueCcpacity|threadNamePrefix|channelName
+  directoriesInputList:
+    - /Users/zhaopei/Desktop/5/send|*.xml|500|100|4|8|3000|20000|5-send-|5-send
+  # channelName|directories|filePrefix|fileSuffix
+  directoriesOutputList:
+    - 5-send|/Users/zhaopei/Desktop/5/send1,/Users/zhaopei/Desktop/5/send2|FILE_RECEIVE|.xml
